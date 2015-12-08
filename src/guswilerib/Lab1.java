@@ -3,9 +3,7 @@ package guswilerib;
 import javax.swing.*;
 import java.util.ArrayList;
 
-/**
- * Created by guswilerib on 12/3/2015.
- */
+//yeah I'd say so friend
 public class Lab1 {
     public static void main(String[] args) {
         boolean isRunning = true;
