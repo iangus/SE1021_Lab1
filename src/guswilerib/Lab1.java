@@ -3,7 +3,7 @@ package guswilerib;
 import javax.swing.*;
 import java.util.ArrayList;
 
-//yeah I'd say so friend
+//yeah I'd say so friend... Hmm so it would appear that it doesn't exactly function currently
 public class Lab1 {
     public static void main(String[] args) {
         boolean isRunning = true;
