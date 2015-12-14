@@ -9,7 +9,7 @@
 
 package guswilerib;
 
-import javax.swing.*;
+import javax.swing.JOptionPane;
 import java.util.ArrayList;
 
 /**
@@ -54,7 +54,7 @@ public class Lab1 {
      *
      * @return The integer the user has entered for menu selection
      */
-    public static int mainMenu(){
+    private static int mainMenu(){
         String input = JOptionPane.showInputDialog(null, "Select an option.\n0. Exit\n1. Reverse a .wav file" +
                 "\n2. Create a .wav of a specified frequency\n3. Create a .wav with two frequencies");
         return Integer.parseInt(input);
@@ -64,7 +64,7 @@ public class Lab1 {
      * Method used to reverse the samples of a selected .wav file
      * and create a new .wav file with a 'Rev' affix
      */
-    public static void reverseWav(){
+    private static void reverseWav(){
         String fileName = JOptionPane.showInputDialog(null, "Please input a wav file name without the .wav extension");
         WavFile original = new WavFile(fileName + ".wav");
 
@@ -82,7 +82,7 @@ public class Lab1 {
     /**
      * Method used to create a .wav file of one second of audio at a specified frequency with a specified file name
      */
-    public static void frequency(){
+    private static void frequency(){
         int sampleRate = 96000;
         int bits = 16;
         int channels = 1;
@@ -103,7 +103,7 @@ public class Lab1 {
      * Method used to create a .wav file of one second of audio with two specified frequencies interleaved
      * and a specified file name
      */
-    public static void twoChannel(){
+    private static void twoChannel(){
         int sampleRate = 96000;
         int bits = 16;
         int channels = 2;
